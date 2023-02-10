@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+
+</head>
+
+<body>
+ <h1>Imagem dinâmica</h1>
+   
+   <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+   <picture>
+     <source media="(Max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+     <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+     <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+
+ <hr>
+
+ <h1>Reproduzindo audio</h1>
+
+ <p>Vamos aprender a reproduzir audios em HTML5.</p>
+
+   <audio preload="metadata" controls>
+     <source src="midias/Can't Hide - Otis McDonald.mp3" type="audio/mpeg">
+     <source src="midias/Can't Hide - Otis McDonald.ogg" type="audio/ogg">
+     <source src="midias/Can't Hide - Otis McDonald.wav" type="audio/wav">
+              <!--Mídias de audio suportadas .mp3 .ogg. .wav-->
+
+    </audio>
+
+ <p>Caso o seu navegador não reproduza o áudio. Faça o dowload clicando no <ins>formato preferido</ins>:
+        <ul>
+            <li><a href="midias/Can't Hide - Otis McDonald.mp3">Arquivo em MP3</a></li>
+            <li><a href="midias/Can't Hide - Otis McDonald.ogg">Arquivo em OGG</a></li>
+            <li><a href="midias/Can't Hide - Otis McDonald.wav">Arquivo em WAV</a></li>
+
+        </ul>
+  </p>
+
+</body>
+</html>
